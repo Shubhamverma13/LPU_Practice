@@ -1,0 +1,33 @@
+Function overloading
+________________________
+
+I have two function whoes name is same and dealing with different parameter."then thi is function overloading.
+
+#include<iostream>
+using namespace std;
+
+void firstfunc() {
+    cout<<"This is first func"<<endl;
+}
+
+void firstfunc(int x) {
+    cout<<"This is second func"<<endl;
+}
+
+void firstfunc(double y) {
+    cout<<"Double is passed as parameter"<<endl;
+}
+
+
+int main()
+{
+    firstfunc(2.1);
+
+}
+
+____________________________________________________________
+
+OOPS
+
+_____________________________________________________________
+

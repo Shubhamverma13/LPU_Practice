@@ -1,0 +1,151 @@
+We can also use break keyword in for loop.
+
+When the value of i == 4 then loop terminate and coming out of the loop.
+
+for(int i = 0; i <= 5; i++) {
+if(i == 4) {
+	break;
+}
+cout<<"Value of i : " << i << endl;
+	
+	}
+}
+
+____________________________________________________
+
+Continue ;
+
+In continue we skip that particular number skip in that iteration.
+_______________________________________________
+
+for(int i = 0; i <= 5; i++) {
+if(i == 4) {
+	continue;
+}
+cout<<"Value of i : " << i << endl;
+	
+	}
+}
+___________________________________________________
+We use continue to skip the particular condition.
+____________________________________________________
+
+Structure
+_____________________________
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    struct{
+        int a;
+        int n;
+        string c;
+        double d;
+        string myName;
+    } myStruct;
+
+    myStruct.myName = "Shubham";
+
+    cout<< myStruct.myName <<endl;
+
+
+}
+
+
+___________________________________________________
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    struct{
+        string playerName;
+        int playerHealth;
+        string weapon;
+    } player1, player2, player3;
+
+    player1.playerName = "Mark";
+    player1.playerHealth = 100;
+    player1.weapon = "Gun";
+
+    player2.playerName = "John";
+    player2.playerHealth = 200;
+    player2.weapon = "Knief";
+
+
+    cout<<"Player 1 is  " << player1.playerName <<" and player 2 is  " << player2.playerName<<endl;;
+
+
+}
+
+
+____________________________________________________________
+
+
+#include<iostream>
+using namespace std;
+
+struct car{
+        int speed;
+        string name;
+
+    };
+int main()
+{
+    car car1;
+    car car2;
+
+    car1.name = "BMW";
+    car2.name = "AUDI";
+
+    cout<< "Car 1 is" << car1.name<<endl;
+
+
+}
+
+_________________________________________________
+&ref variable
+_________________________________________________
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a = 5;
+    int &ref = a;
+
+    cout<<a<<endl;
+    cout<<ref<<endl;
+    cout<< &ref<<endl;
+}
+
+________________________________________________
+I can also get addres of this variable[memory location of that place where file create].We can not re assigned of referance variable means we can not modified this variable.
+
+
+
+cout<< &ref << endl;
+_____________________________________________________
+
+Pointers [Getting addres of the stored variable]
+_____________________________________________________
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    string a = "Hello";
+    string *ptr = &a;
+
+    cout<< a << endl;
+    cout<< ptr;
+}
+
+
+________________________________
+When we use astrick ptr (*ptr) then we get value. here it is not acting as a pointer.ptr is just storing memory location. 
+
+cout<< *ptr << endl// derefrencing
+______________________________________________

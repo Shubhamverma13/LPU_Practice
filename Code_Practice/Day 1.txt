@@ -1,0 +1,169 @@
+Q1> Sum of digit of numbers
+______________________________________________
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int sum = 0;
+    while(n > 0) {
+        sum+=(n%10);
+        n /= 10;
+    }
+    cout<<sum<<endl;
+
+
+}
+___________________________________________________________
+
+Q2} Swapping numbers
+____________________________________________________________
+
+#include<iostream>
+using namespace std;
+
+
+int main()
+{
+    int a;
+    cout<<"Enter Your First Number: "<<endl;
+    cin>>a;
+
+    int b;
+    cout<<"Enter Your Second Number: "<<endl;
+    cin>>b;cout<<endl;
+
+    int p;
+    cout<<"Before Swapping number is "<<a<<" "<<b<<endl;
+    a = a ^ b;
+    b = a ^ b;
+    a = a ^ b;
+
+
+    cout<<"After Swapping number is "<<a<<" "<<b<<endl;
+
+
+}
+//(number%2 == 0) ? cout<<number<<"it is a even num"<<endl : cout<<number<<"It is a odd num"<<endl;;
+
+
+________________________________________________________
+Q} Reverse a given integer number
+________________________________________________________
+#include<iostream>
+using namespace std;
+int main()
+{
+    int num;
+    cin>>num;
+    int rev = 0;
+
+    while(num) {
+        rev*=10;
+        rev+=num%10;
+        num/=10;
+    }
+    cout<<"Reverse of the number is:"<<rev<<endl;
+    return 0;
+
+}
+____________________________________________________
+
+Q} Find the sum of n numbers
+____________________________________________________
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+
+    int n;
+    cin>>n;
+    int sum =0;
+    for(int i = 0;i<=n;i++) {
+        sum += i;
+
+    }
+    cout<<sum;
+}
+
+___________________________________________________________
+
+Q} Find power of a and b
+___________________________________________________________
+
+#include<iostream>
+using namespace std;
+
+int power(int a, int b) {
+    int ans = 1;
+
+    for(int i = 1; i <= b; i++) {
+        ans*=a;
+    }
+    return ans;
+
+
+}
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+
+    int ans = power(a,b);
+
+    cout<<"Answer is"<<ans<<endl;
+
+
+
+}
+__________________________________________________
+
+pow(a,b); a raise b;
+
+___________________________________________________
+
+Q}Prime Or Not
+___________________________________________________
+
+#include<iostream>
+using namespace std;
+//0->Prime
+//1->NOt Prime
+bool isPrime(int n) {
+
+    for(int i = 2; i < n; i++) {
+
+        if(n%i == 0){
+            return 1;
+        }
+
+    }
+    return 0;//prime
+
+}
+
+int main()
+{
+    int n;
+    cin>>n;
+
+    if(isPrime(n)) {
+
+        cout<<"Not Prime"<<endl;
+    } else {
+        cout<<"Prime"<<endl;
+    }
+
+    return 0;
+
+}
+
+
+___________________________________________________
+
+
+
