@@ -9,8 +9,8 @@ int main()
         cout<<numbers[i]<<" ";
     }cout<<endl;
 
-    cout<<"Maximum element is : "<<*max_element(numbers.begin(),numbers.end())<<endl;
+    cout<<"Maximum element : "<<*max_element(numbers.begin(),numbers.end())<<endl;
 
-    cout<<"Minimum element is : " << *min_element(numbers.begin(),numbers.end())<<endl;
+    cout<<"Minimum element : " << *min_element(numbers.begin(),numbers.end())<<endl;
     return 0;
 }
