@@ -1,0 +1,30 @@
+Bubble Sort
+______________________
+
+#include <bits/stdc++.h> 
+void bubbleSort(vector<int>& arr, int n)
+{   
+    // Write your code here.
+    for(int i = 1; i < n; i++) {
+        
+        for(int j = 0; j < n - i; j++){
+            if(arr[j] > arr[j + 1])
+                swap(arr[j],arr[j+1]);
+        }
+    }
+}
+
+________________________________________________
+
+ If we take i as 1 to n then we have to take j as 0 to n - 1;
+
+If we take i as 0 to n - 1 then we have to take j as n-i-1;
+
+___________________________________________________________
+Time Complexity -> O(n^2)
+___________________________________________________________
+
+Space Complexity -> O(n)
+___________________________________________________________
+
+Best case -> 
